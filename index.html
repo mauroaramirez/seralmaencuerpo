@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <link href="./css/estilo_porfolio.css" rel="stylesheet">
+
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Simple line icons-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+    rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+    rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/estilo_porfolio.css" rel="stylesheet" />
+
+  <link href="css/index.css" rel="stylesheet" />
+
+  <title>Ser Alma en Cuerpo</title>
+  <!--Primero obtenemos el CSS desde el framework Bootstrap y luego aplicamos nuestro propio CSS
+    Bootstrap siempre divide el contenido del navegador en 12 columnas
+    -->
+</head>
+
+<body>
+
+  <header>
+    <h1 class="center">SER ALMA EN CUERPO</h1>
+  </header>
+
+  <!--INICIO BARRA NAV-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 80%; margin-left: 10%; margin-bottom: 2%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#page-top">Barra de Navegacion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Videos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Terapias on-line
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Biodescodificación</a></li>
+              <li><a class="dropdown-item" href="#">Liberación Emocional</a></li>
+              <li><a class="dropdown-item" href="#">Diagnóstico con Péndulo</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Talleres off-line</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--FIN BARRA NAV-->
+
+  <!--Insertamos carrusel-->
+  <!--PREGUNTAR AL PROFE:
+  - COMO MODIFICAR EL CSS EXTRAIDO DE BOOSTRAP"""
+  - PODEMOS AGREGAR NUESTRO PROPIO CAMBIOS DEL ESTILO CSS 
+-->
+  <div id="carouselExampleIndicators" class="carousel slide" style="width: 80%; margin-left: 10%;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <!--Cada imagen del carrusel tiene un link hacia un parrafo con su descripcion-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/Logo/Logo_rectangular.png" class="d-block w-100" alt="imagen_1" style="height: 650px;">
+      </div>
+      <div class="carousel-item">
+        <a href="#parrafo_uno">
+          <img src="./img/Carrusel/Diagnostico_con_pendulo_portada.png" class="d-block w-100"
+            alt="Diagnostico_con_pendulo_portada" style="height: 650px;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#parrafo_dos">
+          <img src="./img/Carrusel/Liberación_emocional_portada.png" class="d-block w-100"
+            alt="Liberación_emocional_portada" style="height: 650px;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#parrafo_tres">
+          <img src="./img/Carrusel/Biodecodificación_portada.png" class="d-block w-100" alt="Biodecodificación_portada"
+            style="height: 650px;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#parrafo_cuatro">
+          <img src="./img/Carrusel/Otras_terapias_portada.png" class="d-block w-100" alt="Otras_terapias_portada"
+            style="height: 650px;">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Fin del carrusel-->
+
+  <!-- Inicio Portfolio-->
+  <section class="content-section" id="portfolio">
+    <div class="container px-4 px-lg-5">
+      <div class="content-section-heading text-center">
+        <h3>Ser Alma en Cuerpo</h3>
+        <h2>Nuestros Servicios</h2>
+      </div>
+      <div class="row gx-0">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="for_index.html" target="_self"> <!--envia formulario-->
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Formulario</div>
+                <p class="mb-0">Datos Personales</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="./img/Cuarto encuentro ascendente sol y luna.png" alt="..." />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">LINK 2</div>
+                <p class="mb-0">TEXTO LINK 2</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="./img/Primer Encuentro Signos Zodiacales.png" alt="..." />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">LINK 3</div>
+                <p class="mb-0">TEXTO LINK 3</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="./img/no se que es.png" alt="..." />
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">LINK 4</div>
+                <p class="mb-0">TEXTO LINK 4</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="./img/Galeria/Copia de BIODESCODIFICACIÓN 1.png" alt="..." />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Cada parrafo tiene un ID para poder ubicarlos desde un link desde el carrusel-->
+  <!--PARRAFO 1-->
+  <section id="parrafo_uno">
+    <div class="parrafos">
+      <h3>Diagnóstico con Péndulo</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestias porro perferendis mollitia
+        suscipit nulla amet vitae reprehenderit voluptates provident, ipsam deserunt fugiat! Dolorem, delectus odit
+        optio quae reiciendis earum!
+      </p>
+    </div>
+  </section>
+
+  <!--PARRAFO 2-->
+  <section id="parrafo_dos">
+    <div class="parrafos">
+      <h3>Liberación Emocional</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestias porro perferendis mollitia
+        suscipit nulla amet vitae reprehenderit voluptates provident, ipsam deserunt fugiat! Dolorem, delectus odit
+        optio quae reiciendis earum!
+      </p>
+    </div>
+  </section>
+
+  <!--PARRAFO 3-->
+  <section id="parrafo_tres">
+    <div class="parrafos">
+      <h3>Biodecodificación</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestias porro perferendis mollitia
+        suscipit nulla amet vitae reprehenderit voluptates provident, ipsam deserunt fugiat! Dolorem, delectus odit
+        optio quae reiciendis earum!
+      </p>
+    </div>
+  </section>
+
+  <!--PARRAFO 4-->
+  <section id="parrafo_cuatro">
+    <div class="parrafos">
+      <h3>Otras terapias</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestias porro perferendis mollitia
+        suscipit nulla amet vitae reprehenderit voluptates provident, ipsam deserunt fugiat! Dolorem, delectus odit
+        optio quae reiciendis earum!
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer-->
+<section class="footer">
+  <footer>
+        <div>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo_formulario.css">
+
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Nombre</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="Nombre" placeholder="Nombre..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Apellido</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="Apellido" placeholder="Apellido..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="País">País</label>
+          </div>
+          <div class="col-75">
+            <select id="País" name="País">
+              <option value="australia">Argentina</option>
+              <option value="canada">Uruguay</option>
+              <option value="usa">Paraguay</option>
+              <option value="usa">Brasil</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Mensaje</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Escribe algo..." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Enviar">
+        </div>
+        </form>
+      </div>
+      
+    
+</body>
+</html>
